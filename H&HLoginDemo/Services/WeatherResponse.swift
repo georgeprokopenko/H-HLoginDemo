@@ -18,9 +18,9 @@ struct Location: Decodable {
 }
 
 struct Forecasts: Decodable {
-    var forecastForDay: [Forecast]
+    var forecastsForDay: [Forecast]
     enum CodingKeys: String, CodingKey {
-        case forecastForDay = "forecastday"
+        case forecastsForDay = "forecastday"
     }
 }
 
@@ -54,4 +54,20 @@ struct WeatherResponse: Decodable {
     enum CodingKeys: String, CodingKey {
         case forecasts = "forecast", location
     }
+    
+    //MARK: -
+    
+    func humanDescription() -> String {
+        if let dayForecast = self.forecasts.forecastsForDay.first?.dayForecast {
+            let temp = dayForecast.temp, humidity = dayForecast.humidity
+            return "Tomorrow in \(self.location.city), \(self.location.country) will be \(temp)C, humidity will be \(humidity)%"
+        }
+        else {
+            return "No forecast"
+        }
+    }
+    
 }
+
+
+

@@ -44,7 +44,10 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginAction(_ sender: Any) {
         weatherService.requestLocalWeather { (response, error) in
-            print(response)
+            if let forecast = response {
+                ActionsPresenter.showAlert(from: self, title: "Weather",
+                                           message: forecast.humanDescription())
+            }
         }
     }
     
