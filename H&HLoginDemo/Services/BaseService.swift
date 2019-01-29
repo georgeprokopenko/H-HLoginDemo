@@ -9,6 +9,7 @@
 import UIKit
 
 typealias RequestObjectResultClosure = (AnyObject?, HHAPIError) -> ()
+typealias WeatherResponseResultClosure = (WeatherResponse?, HHAPIError) -> ()
 
 class BaseService: NSObject {
 

@@ -26,18 +26,19 @@ class WeatherService: BaseService {
         self.startLocationObserving()
     }
     
-    func requestLocalWeather(completion: @escaping RequestObjectResultClosure) {
+    func requestLocalWeather(completionHandler: @escaping WeatherResponseResultClosure) {
         if let location = self.currentLocation {
-            self.hhAPI.request(.weatherByCoords(location.coordinate.latitude, location.coordinate.longitude)) { [weak self] (result, error) in
-                print(result)
-                print(error)
+            self.hhAPI.request(.weatherByCoords(location.coordinate.latitude, location.coordinate.longitude)) {(result, error) in
+                if let parsedData = try? JSONDecoder().decode(WeatherResponse.self, from: result as! Data) {
+                    completionHandler(parsedData, .none)
+                }
+                else {
+                    completionHandler(nil, .unknown)
+                }
             }
         }
         else {
-            self.hhAPI.request(.weatherByCoords(40, 30)) { [weak self] (result, error) in
-                print(result)
-                print(error)
-            }
+            self.startLocationObserving()
         }
     }
     

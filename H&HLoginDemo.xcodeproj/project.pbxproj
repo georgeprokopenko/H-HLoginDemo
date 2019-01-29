@@ -27,6 +27,7 @@
 		4D396D8822005D25003958E4 /* RoutableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8722005D25003958E4 /* RoutableViewController.swift */; };
 		4D396D8E22006A77003958E4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */; };
 		86E6C83A23125B2F71A10066 /* Pods_H_HLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDD2934B5491705B358185 /* Pods_H_HLoginDemo.framework */; };
+		8733BC2E2200931600B66D04 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733BC2D2200931600B66D04 /* WeatherResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		4D396D85220059D5003958E4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D396D8722005D25003958E4 /* RoutableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableViewController.swift; sourceTree = "<group>"; };
 		4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		8733BC2D2200931600B66D04 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		8D4420D60B322DE81F7CE428 /* Pods-H&HLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&HLoginDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
 		F5208EFA9ECFC97BEBDCC9A5 /* Pods-H&HLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&HLoginDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				4D396D5821FF7FDB003958E4 /* AppDelegate.swift */,
+				8733BC2D2200931600B66D04 /* WeatherResponse.swift */,
 				4D396D7121FF841C003958E4 /* Login View Controller */,
 				4D396D892200618B003958E4 /* Services */,
 				4D396D8A220061A2003958E4 /* API */,
@@ -290,6 +293,7 @@
 				4D396D7B21FFA058003958E4 /* Constants.swift in Sources */,
 				4D396D8E22006A77003958E4 /* UIButton+Extensions.swift in Sources */,
 				4D396D86220059D5003958E4 /* Router.swift in Sources */,
+				8733BC2E2200931600B66D04 /* WeatherResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

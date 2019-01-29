@@ -12,7 +12,7 @@ class ViewController: RoutableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = ""
     }
     
     override func viewDidAppear(_ animated: Bool) {

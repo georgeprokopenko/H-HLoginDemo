@@ -11,10 +11,12 @@ import Alamofire
 
 class HHProvider: NSObject {
     
-    func request(_ target: HHAPI, completionHandler: @escaping RequestObjectResultClosure) -> Void {
+    func request(_ target: HHAPI, completionHandler: @escaping RequestObjectResultClosure) {
         Alamofire.request(target.toString()).responseJSON { (response) in
             print(response)
+            if response.data != nil {
+                completionHandler(response.data as AnyObject, .none)
+            }
         }
     }
-    
 }
