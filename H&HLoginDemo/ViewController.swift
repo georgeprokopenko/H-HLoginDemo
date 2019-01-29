@@ -14,10 +14,10 @@ class ViewController: RoutableViewController {
         super.viewDidLoad()
         self.title = ""
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
+
+    @IBAction func authAction(_ sender: Any) {
         self.router.go(to: .login)
     }
-
+    
 }
 

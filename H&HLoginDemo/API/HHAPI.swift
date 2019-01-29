@@ -11,6 +11,7 @@ import Foundation
 enum HHAPI {
     case login(String, String)
     case weatherByCoords(Double, Double)
+    case forgotPassword(String)
     case another
     
     var requiresAuth: Bool {
@@ -36,8 +37,10 @@ enum HHAPI {
             urlString = ""
         case .another:
             urlString = ""
-        }
-    
+        case .forgotPassword(_):
+        urlString = ""
+    }
+        
         return urlString
     }
 }

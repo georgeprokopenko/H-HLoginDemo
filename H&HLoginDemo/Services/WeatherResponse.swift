@@ -60,7 +60,7 @@ struct WeatherResponse: Decodable {
     func humanDescription() -> String {
         if let dayForecast = self.forecasts.forecastsForDay.first?.dayForecast {
             let temp = dayForecast.temp, humidity = dayForecast.humidity
-            return "Tomorrow in \(self.location.city), \(self.location.country) will be \(temp)C, humidity will be \(humidity)%"
+            return "Tomorrow in \(self.location.city), \(self.location.country) will be \(temp)C, \(humidity)% of humidity."
         }
         else {
             return "No forecast"

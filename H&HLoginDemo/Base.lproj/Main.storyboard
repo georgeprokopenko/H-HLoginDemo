@@ -36,10 +36,20 @@
                                 <color key="textColor" red="0.87732478030072125" green="0.87732478030072125" blue="0.87732478030072125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-iT-DOI">
+                                <rect key="frame" x="135" y="503" width="104" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Авторизация"/>
+                                <connections>
+                                    <action selector="authAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Hq-WM-hpM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="C9y-iT-DOI" firstAttribute="top" secondItem="Rsd-j2-gt9" secondAttribute="bottom" constant="50" id="6ev-5R-Xvt"/>
                             <constraint firstItem="ivf-hV-e6j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfv-Uq-cIl"/>
+                            <constraint firstItem="C9y-iT-DOI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uvm-Ei-PrW"/>
                             <constraint firstItem="Rsd-j2-gt9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-20" id="VTE-HA-efm"/>
                             <constraint firstItem="ivf-hV-e6j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c1F-3C-vYR"/>
                             <constraint firstItem="Rsd-j2-gt9" firstAttribute="leading" secondItem="Ove-HL-rLa" secondAttribute="leading" id="emF-7q-8BM"/>

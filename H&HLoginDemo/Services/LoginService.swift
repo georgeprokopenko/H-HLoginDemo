@@ -14,6 +14,14 @@ class LoginService: BaseService {
         super.init(hhAPI: hhAPI)
     }
     
-    
+    func requestPasswordRecovery(with email: String, completionHandler: @escaping RequestObjectResultClosure) {
+        self.hhAPI.request(.forgotPassword(email)) { result, error in
+            if result != nil {
+                completionHandler(result, .none)
+            } else {
+                completionHandler(nil, .unknown)
+            }
+        }
+    }
     
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputTextFieldView" customModule="H_HLoginDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="separatorLine" destination="JtP-mc-IfE" id="yg7-2l-cBC"/>
+                <outlet property="textField" destination="NKI-Sc-0XJ" id="h4M-qC-pKT"/>
+                <outlet property="title" destination="ddg-MI-KAb" id="aYc-1w-82R"/>
+                <outlet property="view" destination="iN0-l3-epB" id="NXD-eA-wGO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddg-MI-KAb">
+                    <rect key="frame" x="2" y="2" width="43.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JtP-mc-IfE">
+                    <rect key="frame" x="2" y="42" width="335" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="CFO-tY-LJB"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-Sc-0XJ">
+                    <rect key="frame" x="2" y="23" width="335" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="jC5-GA-n1G"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JtP-mc-IfE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="1OF-Tv-n4p"/>
+                <constraint firstItem="NKI-Sc-0XJ" firstAttribute="leading" secondItem="ddg-MI-KAb" secondAttribute="leading" id="UDx-sk-Huo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NKI-Sc-0XJ" secondAttribute="trailing" constant="2" id="WNc-AH-VA5"/>
+                <constraint firstItem="ddg-MI-KAb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="b8Z-rk-Fnj"/>
+                <constraint firstItem="NKI-Sc-0XJ" firstAttribute="top" secondItem="ddg-MI-KAb" secondAttribute="bottom" constant="3" id="j3m-hw-GZI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="JtP-mc-IfE" secondAttribute="bottom" constant="2" id="mDQ-f1-39f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JtP-mc-IfE" secondAttribute="trailing" constant="2" id="oc7-JV-Tht"/>
+                <constraint firstItem="ddg-MI-KAb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="t2q-94-ghu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="16.5" y="-252.5"/>
+        </view>
+    </objects>
+</document>

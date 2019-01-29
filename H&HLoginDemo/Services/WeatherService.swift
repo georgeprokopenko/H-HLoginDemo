@@ -28,7 +28,7 @@ class WeatherService: BaseService {
     
     func requestLocalWeather(completionHandler: @escaping WeatherResponseResultClosure) {
         if let location = self.currentLocation {
-            self.hhAPI.request(.weatherByCoords(location.coordinate.latitude, location.coordinate.longitude)) {(result, error) in
+            self.hhAPI.request(.weatherByCoords(location.coordinate.latitude, location.coordinate.longitude)) { result, error in
                 if let parsedData = try? JSONDecoder().decode(WeatherResponse.self, from: result as! Data) {
                     completionHandler(parsedData, .none)
                 }

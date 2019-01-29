@@ -26,6 +26,11 @@
 		4D396D86220059D5003958E4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D85220059D5003958E4 /* Router.swift */; };
 		4D396D8822005D25003958E4 /* RoutableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8722005D25003958E4 /* RoutableViewController.swift */; };
 		4D396D8E22006A77003958E4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */; };
+		4D396D902200D16A003958E4 /* LoadingSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8F2200D16A003958E4 /* LoadingSpinner.swift */; };
+		4D396D922200D4A0003958E4 /* InputTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D912200D4A0003958E4 /* InputTextFieldView.swift */; };
+		4D396D942200D4EA003958E4 /* InputTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D396D932200D4EA003958E4 /* InputTextFieldView.xib */; };
+		4D396D962200DE2B003958E4 /* FieldValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D952200DE2B003958E4 /* FieldValidationHelper.swift */; };
+		4D396D982200F911003958E4 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D972200F911003958E4 /* UIScrollView+Extensions.swift */; };
 		86E6C83A23125B2F71A10066 /* Pods_H_HLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDD2934B5491705B358185 /* Pods_H_HLoginDemo.framework */; };
 		8733BC2E2200931600B66D04 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733BC2D2200931600B66D04 /* WeatherResponse.swift */; };
 		8733BC302200AEC400B66D04 /* ActionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8733BC2F2200AEC400B66D04 /* ActionsPresenter.swift */; };
@@ -54,6 +59,11 @@
 		4D396D85220059D5003958E4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4D396D8722005D25003958E4 /* RoutableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableViewController.swift; sourceTree = "<group>"; };
 		4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		4D396D8F2200D16A003958E4 /* LoadingSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinner.swift; sourceTree = "<group>"; };
+		4D396D912200D4A0003958E4 /* InputTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextFieldView.swift; sourceTree = "<group>"; };
+		4D396D932200D4EA003958E4 /* InputTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextFieldView.xib; sourceTree = "<group>"; };
+		4D396D952200DE2B003958E4 /* FieldValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidationHelper.swift; sourceTree = "<group>"; };
+		4D396D972200F911003958E4 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		8733BC2D2200931600B66D04 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		8733BC2F2200AEC400B66D04 /* ActionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActionsPresenter.swift; path = "H&HLoginDemo/Utilities/ActionsPresenter.swift"; sourceTree = SOURCE_ROOT; };
 		8D4420D60B322DE81F7CE428 /* Pods-H&HLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&HLoginDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +122,7 @@
 			children = (
 				4D396D6C21FF83EB003958E4 /* LoginViewController.swift */,
 				4D396D6D21FF83EB003958E4 /* LoginViewController.xib */,
+				4D396D992200FD7D003958E4 /* Input Field View */,
 			);
 			path = "Login View Controller";
 			sourceTree = "<group>";
@@ -119,11 +130,12 @@
 		4D396D8422005867003958E4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4D396D8F2200D16A003958E4 /* LoadingSpinner.swift */,
 				4D396D85220059D5003958E4 /* Router.swift */,
 				4D396D7A21FFA058003958E4 /* Constants.swift */,
+				4D396D952200DE2B003958E4 /* FieldValidationHelper.swift */,
 				4D396D8722005D25003958E4 /* RoutableViewController.swift */,
-				4D396D8222005586003958E4 /* CLLocation+Extensions.swift */,
-				4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */,
+				4D396D9A2200FDAC003958E4 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -149,6 +161,25 @@
 				4D396D7821FF9CED003958E4 /* HHAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		4D396D992200FD7D003958E4 /* Input Field View */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D912200D4A0003958E4 /* InputTextFieldView.swift */,
+				4D396D932200D4EA003958E4 /* InputTextFieldView.xib */,
+			);
+			path = "Input Field View";
+			sourceTree = "<group>";
+		};
+		4D396D9A2200FDAC003958E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D8222005586003958E4 /* CLLocation+Extensions.swift */,
+				4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */,
+				4D396D972200F911003958E4 /* UIScrollView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		557032E73E75697BC2CA1751 /* Frameworks */ = {
@@ -232,6 +263,7 @@
 				4D396D6321FF7FE0003958E4 /* LaunchScreen.storyboard in Resources */,
 				4D396D6021FF7FE0003958E4 /* Assets.xcassets in Resources */,
 				4D396D5E21FF7FDB003958E4 /* Main.storyboard in Resources */,
+				4D396D942200D4EA003958E4 /* InputTextFieldView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +315,11 @@
 			files = (
 				4D396D7321FF98B4003958E4 /* ServiceFactory.swift in Sources */,
 				8733BC302200AEC400B66D04 /* ActionsPresenter.swift in Sources */,
+				4D396D902200D16A003958E4 /* LoadingSpinner.swift in Sources */,
+				4D396D922200D4A0003958E4 /* InputTextFieldView.swift in Sources */,
 				4D396D8322005586003958E4 /* CLLocation+Extensions.swift in Sources */,
+				4D396D962200DE2B003958E4 /* FieldValidationHelper.swift in Sources */,
+				4D396D982200F911003958E4 /* UIScrollView+Extensions.swift in Sources */,
 				4D396D7D21FFAC1E003958E4 /* HHAPIError.swift in Sources */,
 				4D396D81220051E0003958E4 /* WeatherService.swift in Sources */,
 				4D396D6E21FF83EB003958E4 /* LoginViewController.swift in Sources */,
