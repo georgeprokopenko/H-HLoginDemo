@@ -12,9 +12,25 @@
 		4D396D5E21FF7FDB003958E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D396D5C21FF7FDB003958E4 /* Main.storyboard */; };
 		4D396D6021FF7FE0003958E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D396D5F21FF7FE0003958E4 /* Assets.xcassets */; };
 		4D396D6321FF7FE0003958E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D396D6121FF7FE0003958E4 /* LaunchScreen.storyboard */; };
+		4D396D6E21FF83EB003958E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D6C21FF83EB003958E4 /* LoginViewController.swift */; };
+		4D396D6F21FF83EB003958E4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D396D6D21FF83EB003958E4 /* LoginViewController.xib */; };
+		4D396D7321FF98B4003958E4 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7221FF98B4003958E4 /* ServiceFactory.swift */; };
+		4D396D7521FF98E2003958E4 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7421FF98E2003958E4 /* LoginService.swift */; };
+		4D396D7721FF9929003958E4 /* HHProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7621FF9929003958E4 /* HHProvider.swift */; };
+		4D396D7921FF9CED003958E4 /* HHAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7821FF9CED003958E4 /* HHAPI.swift */; };
+		4D396D7B21FFA058003958E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7A21FFA058003958E4 /* Constants.swift */; };
+		4D396D7D21FFAC1E003958E4 /* HHAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7C21FFAC1D003958E4 /* HHAPIError.swift */; };
+		4D396D7F22004AA9003958E4 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D7E22004AA9003958E4 /* BaseService.swift */; };
+		4D396D81220051E0003958E4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D80220051E0003958E4 /* WeatherService.swift */; };
+		4D396D8322005586003958E4 /* CLLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8222005586003958E4 /* CLLocation+Extensions.swift */; };
+		4D396D86220059D5003958E4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D85220059D5003958E4 /* Router.swift */; };
+		4D396D8822005D25003958E4 /* RoutableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8722005D25003958E4 /* RoutableViewController.swift */; };
+		4D396D8E22006A77003958E4 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */; };
+		86E6C83A23125B2F71A10066 /* Pods_H_HLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DDD2934B5491705B358185 /* Pods_H_HLoginDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25DDD2934B5491705B358185 /* Pods_H_HLoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H_HLoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D396D5521FF7FDB003958E4 /* H&HLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "H&HLoginDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D396D5821FF7FDB003958E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D396D5A21FF7FDB003958E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +38,22 @@
 		4D396D5F21FF7FE0003958E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D396D6221FF7FE0003958E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D396D6421FF7FE0003958E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D396D6C21FF83EB003958E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D396D6D21FF83EB003958E4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4D396D7221FF98B4003958E4 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		4D396D7421FF98E2003958E4 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		4D396D7621FF9929003958E4 /* HHProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHProvider.swift; sourceTree = "<group>"; };
+		4D396D7821FF9CED003958E4 /* HHAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAPI.swift; sourceTree = "<group>"; };
+		4D396D7A21FFA058003958E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4D396D7C21FFAC1D003958E4 /* HHAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HHAPIError.swift; sourceTree = "<group>"; };
+		4D396D7E22004AA9003958E4 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		4D396D80220051E0003958E4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		4D396D8222005586003958E4 /* CLLocation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extensions.swift"; sourceTree = "<group>"; };
+		4D396D85220059D5003958E4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4D396D8722005D25003958E4 /* RoutableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutableViewController.swift; sourceTree = "<group>"; };
+		4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		8D4420D60B322DE81F7CE428 /* Pods-H&HLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&HLoginDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F5208EFA9ECFC97BEBDCC9A5 /* Pods-H&HLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H&HLoginDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E6C83A23125B2F71A10066 /* Pods_H_HLoginDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,8 @@
 			children = (
 				4D396D5721FF7FDB003958E4 /* H&HLoginDemo */,
 				4D396D5621FF7FDB003958E4 /* Products */,
+				98A4B48DF3A6FB936281E726 /* Pods */,
+				557032E73E75697BC2CA1751 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +90,76 @@
 			isa = PBXGroup;
 			children = (
 				4D396D5821FF7FDB003958E4 /* AppDelegate.swift */,
+				4D396D7121FF841C003958E4 /* Login View Controller */,
+				4D396D892200618B003958E4 /* Services */,
+				4D396D8A220061A2003958E4 /* API */,
 				4D396D5A21FF7FDB003958E4 /* ViewController.swift */,
 				4D396D5C21FF7FDB003958E4 /* Main.storyboard */,
+				4D396D8422005867003958E4 /* Utilities */,
 				4D396D5F21FF7FE0003958E4 /* Assets.xcassets */,
 				4D396D6121FF7FE0003958E4 /* LaunchScreen.storyboard */,
 				4D396D6421FF7FE0003958E4 /* Info.plist */,
 			);
 			path = "H&HLoginDemo";
+			sourceTree = "<group>";
+		};
+		4D396D7121FF841C003958E4 /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D6C21FF83EB003958E4 /* LoginViewController.swift */,
+				4D396D6D21FF83EB003958E4 /* LoginViewController.xib */,
+			);
+			path = "Login View Controller";
+			sourceTree = "<group>";
+		};
+		4D396D8422005867003958E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D85220059D5003958E4 /* Router.swift */,
+				4D396D7A21FFA058003958E4 /* Constants.swift */,
+				4D396D8722005D25003958E4 /* RoutableViewController.swift */,
+				4D396D8222005586003958E4 /* CLLocation+Extensions.swift */,
+				4D396D8D22006A77003958E4 /* UIButton+Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4D396D892200618B003958E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D7221FF98B4003958E4 /* ServiceFactory.swift */,
+				4D396D7E22004AA9003958E4 /* BaseService.swift */,
+				4D396D7421FF98E2003958E4 /* LoginService.swift */,
+				4D396D80220051E0003958E4 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4D396D8A220061A2003958E4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4D396D7621FF9929003958E4 /* HHProvider.swift */,
+				4D396D7C21FFAC1D003958E4 /* HHAPIError.swift */,
+				4D396D7821FF9CED003958E4 /* HHAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		557032E73E75697BC2CA1751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25DDD2934B5491705B358185 /* Pods_H_HLoginDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A4B48DF3A6FB936281E726 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5208EFA9ECFC97BEBDCC9A5 /* Pods-H&HLoginDemo.debug.xcconfig */,
+				8D4420D60B322DE81F7CE428 /* Pods-H&HLoginDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D396D6721FF7FE0003958E4 /* Build configuration list for PBXNativeTarget "H&HLoginDemo" */;
 			buildPhases = (
+				6CD3561A1F769BDCC25AC7ED /* [CP] Check Pods Manifest.lock */,
 				4D396D5121FF7FDB003958E4 /* Sources */,
 				4D396D5221FF7FDB003958E4 /* Frameworks */,
 				4D396D5321FF7FDB003958E4 /* Resources */,
+				B5A6A07888F175AF54CEC055 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D396D6F21FF83EB003958E4 /* LoginViewController.xib in Resources */,
 				4D396D6321FF7FE0003958E4 /* LaunchScreen.storyboard in Resources */,
 				4D396D6021FF7FE0003958E4 /* Assets.xcassets in Resources */,
 				4D396D5E21FF7FDB003958E4 /* Main.storyboard in Resources */,
@@ -130,13 +231,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CD3561A1F769BDCC25AC7ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H&HLoginDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5A6A07888F175AF54CEC055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-H&HLoginDemo/Pods-H&HLoginDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D396D5121FF7FDB003958E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D396D7321FF98B4003958E4 /* ServiceFactory.swift in Sources */,
+				4D396D8322005586003958E4 /* CLLocation+Extensions.swift in Sources */,
+				4D396D7D21FFAC1E003958E4 /* HHAPIError.swift in Sources */,
+				4D396D81220051E0003958E4 /* WeatherService.swift in Sources */,
+				4D396D6E21FF83EB003958E4 /* LoginViewController.swift in Sources */,
+				4D396D7521FF98E2003958E4 /* LoginService.swift in Sources */,
+				4D396D8822005D25003958E4 /* RoutableViewController.swift in Sources */,
 				4D396D5B21FF7FDB003958E4 /* ViewController.swift in Sources */,
+				4D396D7721FF9929003958E4 /* HHProvider.swift in Sources */,
 				4D396D5921FF7FDB003958E4 /* AppDelegate.swift in Sources */,
+				4D396D7921FF9CED003958E4 /* HHAPI.swift in Sources */,
+				4D396D7F22004AA9003958E4 /* BaseService.swift in Sources */,
+				4D396D7B21FFA058003958E4 /* Constants.swift in Sources */,
+				4D396D8E22006A77003958E4 /* UIButton+Extensions.swift in Sources */,
+				4D396D86220059D5003958E4 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +431,7 @@
 		};
 		4D396D6821FF7FE0003958E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5208EFA9ECFC97BEBDCC9A5 /* Pods-H&HLoginDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +450,7 @@
 		};
 		4D396D6921FF7FE0003958E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D4420D60B322DE81F7CE428 /* Pods-H&HLoginDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
