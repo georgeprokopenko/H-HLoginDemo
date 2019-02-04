@@ -13,20 +13,18 @@ class WeatherService: BaseService {
     
     private var locationManager: CLLocationManager?
     private var currentLocation: CLLocation?
+    private var localWeatherRequestCompletion: WeatherResponseResultClosure?
     
     override init(hhAPI: HHProvider) {
         super.init(hhAPI: hhAPI)
         self.locationManager = CLLocationManager()
         self.locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         self.locationManager?.requestWhenInUseAuthorization()
-        self.startLocationObserving()
-    }
-    
-    func getCurrentLocation() {
-        self.startLocationObserving()
     }
     
     func requestLocalWeather(completionHandler: @escaping WeatherResponseResultClosure) {
+        self.localWeatherRequestCompletion = completionHandler
+        
         if let location = self.currentLocation {
             self.hhAPI.request(.weatherByCoords(location.coordinate.latitude, location.coordinate.longitude)) { result, error in
                 if let parsedData = try? JSONDecoder().decode(WeatherResponse.self, from: result as! Data) {
@@ -45,11 +43,13 @@ class WeatherService: BaseService {
     //MARK: -
     
     private func startLocationObserving() {
+        LoadingSpinner.show()
         self.locationManager?.delegate = self
         self.locationManager?.startUpdatingLocation()
     }
     
     private func stopLocationObserving() {
+        LoadingSpinner.hide()
         self.locationManager?.delegate = nil
         self.locationManager?.stopUpdatingLocation()
     }
@@ -62,6 +62,10 @@ extension WeatherService: CLLocationManagerDelegate {
                 self.currentLocation = lastLocation
                 self.stopLocationObserving()
                 print("Current location received")
+                
+                if let completion = self.localWeatherRequestCompletion {
+                    self.requestLocalWeather(completionHandler: completion)
+                }
             }
         }
         

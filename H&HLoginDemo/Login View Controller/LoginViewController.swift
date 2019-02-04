@@ -45,7 +45,6 @@ class LoginViewController: UIViewController {
         self.forgotPassButton.layer.borderWidth = 1.0
         
         self.loginButton.setRounded(by: CGFloat.greatestFiniteMagnitude)
-        self.weatherService.getCurrentLocation()
         self.scrollView.adjustToKeyboard()
     }
     

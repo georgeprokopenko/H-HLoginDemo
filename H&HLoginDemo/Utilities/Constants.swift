@@ -11,6 +11,6 @@ import Foundation
 struct Constants {
     static let defaultServerURL = "https://api.apixu.com/v1/"
     static let weatherAPIKey = "66cb8cf53cec4ce68c9211115192801"
-    static let invalidLoginFieldsMessage = "Password should contain at least one uppercase letter, one lower case and one number"
+    static let invalidLoginFieldsMessage = "Login should contain valid email. Password should contain at least one uppercase letter, one lower case and one number"
     static let passwordRecoveryEmailMessage = "To recover your password please fill in your email"
 }
